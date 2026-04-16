@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Gazette du Maker — 16 avril 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="nav-home" href="index.html">← Retour au kiosque</a>
+    <article class="paper">
+      <header class="masthead">
+        <div class="eyebrow">Édition quotidienne · No. 001</div>
+        <h1>La Gazette du Maker</h1>
+        <div class="meta">
+          <span>Jeudi 16 avril 2026</span>
+          <span class="center">« Le journal des bricoleurs éclairés »</span>
+          <span class="right">Prix : 0,00 € · Édition numérique</span>
+        </div>
+      </header>
+
+      <p class="lede">
+        ESP32 nouvelle génération, lasers fibre qui gagnent en subtilité, imprimantes 3D qui jouent
+        avec le spectre lumineux : tour d'horizon des pépites du jour dans l'open hardware,
+        glanées chez Hackaday, Adafruit, Hackster, CNX Software et consorts.
+      </p>
+
+      <div class="columns">
+
+        <section class="section">
+          <span class="kicker">À la une · Silicium</span>
+          <h2 class="headline">L'ESP32-S31 sort du bois : RISC-V double cœur, Wi-Fi 6 et Ethernet gigabit</h2>
+          <p class="subhead">Espressif confirme une montée en gamme qui rapproche l'ESP32 d'un vrai petit SBC.</p>
+          <div class="story dropcap">
+            <p>
+              Annoncée le 8 avril dernier, la nouvelle puce Espressif ESP32-S31 occupe encore
+              l'actualité : un cœur RISC-V haute performance (avec FPU et SIMD) épaulé par un
+              cœur basse consommation, 60 GPIO au lieu de 45 sur le S3, Wi-Fi 6, Bluetooth 5.4 LE
+              Audio, Thread/Zigbee et surtout un MAC Ethernet gigabit là où ses grands frères
+              plafonnaient à 100 Mbit/s. Les échantillons sont pour l'instant réservés à quelques
+              clients, la disponibilité grand public n'ayant pas encore été annoncée.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://hackaday.com/2026/04/08/espressifs-new-esp32-s31-dual-core-risc-v-with-wifi-6-and-gbit-ethernet/">Hackaday</a>
+              · <a href="https://blog.adafruit.com/2026/04/06/upcoming-esp32-s31-dual-core-risc-v-mcu-offers-gigabit-ethernet-wifi-bluetooth-and-802-15-4-connectivity/">Adafruit</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Open Hardware</span>
+          <h2 class="headline">Orange Pi Zero 3W : un Allwinner A733 dans un format Pi Zero</h2>
+          <div class="story">
+            <p>
+              CNX Software dévoile aujourd'hui la nouvelle carte Orange Pi Zero 3W, animée par un
+              octa-core Cortex-A76/A55 épaulé d'un maximum de 16 Go de LPDDR5. Mini-HDMI 4K, deux
+              USB-C (dont un DisplayPort Alt mode), connecteurs MIPI DSI et deux MIPI CSI, Wi-Fi 6
+              et Bluetooth 5.4 : le format Raspberry Pi Zero n'a jamais été aussi musclé.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.cnx-software.com/2026/04/15/orange-pi-zero-3w-an-allwinner-a733-sbc-in-raspberry-pi-zero-form-factor/">CNX Software</a>
+            </p>
+          </div>
+        </section>
+
+        <div class="pullquote">
+          « À basse hauteur de couche, quatre filaments suffisent pour approcher trente-neuf
+          couleurs distinctes. »
+          <cite>YGK3D, cité par Hackaday</cite>
+        </div>
+
+        <section class="section">
+          <span class="kicker">Impression 3D</span>
+          <h2 class="headline">Full Spectrum Printing : 4 bobines, 39 nuances</h2>
+          <p class="subhead">YGK3D transforme votre multi-matériaux en palette de peintre.</p>
+          <div class="story">
+            <p>
+              Publiée ce matin sur Hackaday, la technique « Full Spectrum 3D Printing » empile de
+              fines couches de filaments différents pour recomposer optiquement une couleur cible.
+              Un logiciel décide comment mélanger les filaments virtuels : avec quatre matériaux à
+              très faible hauteur de couche, on atteint 39 teintes, contre 24 à une hauteur plus
+              standard. De quoi redonner des idées aux possesseurs d'AMS, Mosaic et autres MMU.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://hackaday.com/2026/04/15/a-look-at-full-spectrum-3d-printing/">Hackaday — A Look At Full Spectrum 3D Printing</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Impression 3D · Salons</span>
+          <h2 class="headline">RAPID+TCT 2026 : Anycubic et Elegoo sortent l'artillerie à Boston</h2>
+          <div class="story">
+            <p>
+              Le salon RAPID+TCT ferme ses portes aujourd'hui au Boston Convention Center.
+              Anycubic y a présenté sa nouvelle gamme multicolore FDM et grand-format résine —
+              Photon P1, Kobra S1 Combo, Kobra 4 et Kobra 3 Max Combo. Elegoo, lui, met en
+              précommande dès le 15 avril sa Jupiter 2 : une imprimante LCD grand format
+              proposée en super early bird à 849 $ (retail annoncé à 949 $).
+            </p>
+            <p class="source">
+              Sources :
+              <a href="http://www.prnewswire.com/news-releases/anycubic-showcases-next-generation-3d-printing-lineup-at-rapidtct-2026-highlighting-multicolor-fdm-and-large-format-resin-innovation-302743844.html">Anycubic @ RAPID+TCT</a>
+              · <a href="https://www.manufacturingtomorrow.com/news/2026/04/15/elegoo-launches-large-format-resin-printer-jupiter-2-setting-new-benchmark-in-lcd-3d-printing/27402/">Elegoo Jupiter 2</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker ink">Laser Fibre · MOPA</span>
+          <h2 class="headline">Monport étoffe sa gamme MOPA : jusqu'à 200 W et 20 000 mm/s</h2>
+          <div class="story">
+            <p>
+              Annoncée le 10 avril, la nouvelle salve Monport combine la série GT (fibres 30 à
+              200 W, autofocus, marquage couleur MOPA jusqu'à 20 000 mm/s) et la série Effi (CO2
+              pour bois, acrylique et cuir). De quoi graver bijoux, outils et tags pour animaux
+              avec un niveau de détail que les amateurs réclamaient depuis longtemps.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.prnewswire.com/news-releases/monport-advanced-fiber-laser-and-co2-laser-machines-boost-custom-engraving-and-seasonal-production-in-2026-302739200.html">PR Newswire — Monport 2026</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Gravure laser · DIY</span>
+          <h2 class="headline">BeamInk & PCB au laser fibre : le laser redevient pinceau</h2>
+          <div class="story">
+            <p>
+              Du côté de la bidouille, Hackaday a récemment couvert BeamInk, qui associe une
+              tablette Wacom à une xTool F1 pour « peindre » en direct au laser, et le projet de
+              Giangix qui utilise un laser fibre 20 W et une gravure chimique pour produire des
+              pistes PCB fines, plaque cuivrée maintenue à plat par table à dépression. À suivre
+              le 21 avril, WeCreat lance sur Kickstarter le Lumos Ultra, combo 6 W UV + MOPA 60
+              ou 100 W.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://hackaday.com/tag/laser-engraving/">Hackaday — Laser Engraving</a>
+              · <a href="https://cerebral-overload.com/2026/03/wecreat-launches-lumos-ultra-on-kickstarter-the-worlds-first-only-one-stop-6w-uv-60w-100w-mopa-laser-system/">WeCreat Lumos Ultra</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Projet du jour · ESP32 + 3D</span>
+          <h2 class="headline">PrintSphere : un compagnon rond pour Bambu Lab</h2>
+          <div class="story">
+            <p>
+              Relayé par Adafruit, PrintSphere est un afficheur circulaire à base d'ESP32-S3
+              qui veille sur votre Bambu Lab : arcs de progression, température, ventilateurs,
+              compteur de couches, aperçu du capot et snapshot caméra, avec routage cloud ou
+              local. La communauté Bambu a aussi vu fleurir des variantes ESP32-C3 + écran rond
+              1,28″ qui tiennent dans un boîtier imprimé.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/2026/04/06/a-round-esp32-s3-printer-companion-for-a-bambu-lab-3d-printer/">Adafruit — PrintSphere</a>
+              · <a href="https://blog.adafruit.com/2026/04/09/bambu-monitor-esp32-c3-lcd-1-28-case-3dthursday-3dprinting/">Adafruit — Bambu Monitor</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Logiciel</span>
+          <h2 class="headline">Rust grignote ESP32 : firmware Waveshare divisé par deux</h2>
+          <div class="story">
+            <p>
+              Joli coup côté embarqué : un développeur a réécrit en Rust la totalité du firmware
+              d'une montre Waveshare ESP32-S3. Résultat : le binaire tombe de 1,2 Mo à 579 ko
+              pour des fonctionnalités identiques. Une nouvelle démonstration que Rust sur ESP32
+              n'est plus une curiosité.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://hackaday.com/2026/04/11/rust-y-firmware-for-waveshare-smartwatch/">Hackaday — Rust-y Firmware</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker ink">Rétro-futur</span>
+          <h2 class="headline">Le CH32V003 joue les micro-ordinateurs BASIC</h2>
+          <div class="story">
+            <p>
+              Chez Adafruit, le « V003 Home Computer » transforme un humble CH32V003 à 0,10 $ en
+              mini-ordinateur monochrome PAL avec interpréteur BASIC numéroté et vidéo générée
+              directement par le MCU. Entrée clavier pilotée via le moniteur mono-fil
+              ch32fun : un hommage au Commodore à l'échelle d'un grain de riz.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/2026/04/13/turning-a-ch32v003-microcontroller-into-a-tiny-monochrome-video-basic-machine">Adafruit — V003 Home Computer</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Brèves de l'atelier</span>
+          <ul class="brief-list">
+            <li>
+              <strong>Cydintosh :</strong> un Macintosh Plus complet émulé sur ESP32, STL du boîtier
+              et intégration Home Assistant sur GitHub.
+              <a href="https://hackaday.com/2026/04/13/esp32-weather-display-runs-macintosh-system-3/">[Hackaday]</a>
+            </li>
+            <li>
+              <strong>Velxio :</strong> simulateur open source Arduino/ESP32/RPi directement dans le
+              navigateur, glisser-déposer et console série inclus.
+              <a href="https://www.hackster.io/news/simulate-arduino-esp32-and-more-with-this-open-source-web-tool-a117bee84721">[Hackster]</a>
+            </li>
+            <li>
+              <strong>Smart Easter Egg :</strong> un œuf électronique animé à base d'ESP32, publié sur
+              Hackster début avril.
+              <a href="https://www.hackster.io/noneedforit/smart-easter-egg-with-esp32-f99935">[Hackster]</a>
+            </li>
+            <li>
+              <strong>Olimex ESP32-P4-PC :</strong> une nouvelle carte open source hardware autour du
+              RISC-V double cœur ESP32-P4.
+              <a href="https://blog.adafruit.com/2026/02/18/the-new-esp32-p4-pc-open-source-hardware-board/">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>PocketTerm35 :</strong> terminal Linux portable Raspberry Pi 4/5 avec écran tactile
+              3,5″ et clavier intégré.
+              <a href="https://www.cnx-software.com/2026/04/14/pocketterm35-a-raspberry-pi-4-5-based-handheld-linux-terminal-with-3-5-inch-touch-display-and-built-in-keyboard/">[CNX Software]</a>
+            </li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">ESP32</span>
+            <span class="tag">Open Hardware</span>
+            <span class="tag">Laser Fibre</span>
+            <span class="tag">Impression 3D</span>
+            <span class="tag">RISC-V</span>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        La Gazette du Maker · Compilée le 16 avril 2026 · Sources : Hackaday, Adafruit, Hackster.io,
+        CNX Software, PR Newswire, Manufacturing Tomorrow.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
