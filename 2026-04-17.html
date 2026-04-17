@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Gazette du Maker — 17 avril 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="nav-home" href="index.html">← Retour au kiosque</a>
+    <article class="paper">
+      <header class="masthead">
+        <div class="eyebrow">Édition quotidienne · No. 002</div>
+        <h1>La Gazette du Maker</h1>
+        <div class="meta">
+          <span>Vendredi 17 avril 2026</span>
+          <span class="center">« Le journal des bricoleurs éclairés »</span>
+          <span class="right">Prix : 0,00 € · Édition numérique</span>
+        </div>
+      </header>
+
+      <p class="lede">
+        Bambu rebat les cartes avec son X2D bi-buses, ESPHome offre 34 % de nerf aux ESP32,
+        Prusa et Bondtech désassemblent le tool-changer en huit outils… Et sur l'établi,
+        on aplatit des gaines de fumée. Panorama des pépites du jour.
+      </p>
+
+      <figure class="figure hero-figure halftone">
+        <img src="https://storage.ghost.io/c/8d/d9/8dd9f85b-21c3-4782-bba8-8778cd8f2f93/content/images/size/w1200/2026/04/X2D-00-1.jpg" alt="Bambu Lab X2D — imprimante 3D bi-buses" />
+        <figcaption><strong>Cliché</strong>La nouvelle Bambu Lab X2D, tête à deux buses avec bascule mécanique, dévoilée le 14 avril (Bambu Lab).</figcaption>
+      </figure>
+
+      <div class="columns">
+
+        <section class="section">
+          <span class="kicker">À la une · Impression 3D</span>
+          <h2 class="headline">Bambu Lab X2D : une tête, deux buses, zéro chichi sur les supports</h2>
+          <p class="subhead">Le successeur du X1 mise sur un changement de buse purement mécanique, sans servo additionnel.</p>
+          <div class="story dropcap">
+            <p>
+              Dévoilé le 14 avril et déjà en rayon, le X2D est présenté par Bambu Lab comme
+              l'imprimante qui « règle enfin le problème des supports ». Sa tête d'impression
+              embarque deux buses — une buse gauche Direct Drive (idéale pour le TPU et les
+              filaments techniques) et une buse droite Bowden — que des cames et des leviers
+              basculent sans moteur additionnel. Une million de cycles plus tard, l'industriel
+              annonce zéro dégradation mesurable.
+            </p>
+            <p>
+              Au menu également : buse à 300 °C, chambre chauffée à 65 °C, volume de 256 × 256 ×
+              260 mm, et calibration « Dynamic Flow » pilotée par un petit modèle embarqué.
+              Tarif d'attaque : 649 $ pour la machine seule, 899 $ avec l'AMS 2 Pro.
+            </p>
+
+            <div class="stat-row">
+              <div class="stat"><div class="num">300°C</div><div class="lbl">Buse</div></div>
+              <div class="stat"><div class="num">65°C</div><div class="lbl">Chambre</div></div>
+              <div class="stat"><div class="num">649 $</div><div class="lbl">Prix de base</div></div>
+            </div>
+
+            <p class="source">
+              Sources :
+              <a href="https://blog.bambulab.com/xcellence-made-simple-bambu-lab-presents-the-x2d/">Bambu Lab Blog</a>
+              · <a href="https://www.tomshardware.com/3d-printing/bambu-lab-x2d-review">Tom's Hardware</a>
+              · <a href="https://toolguyd.com/bambu-x2d-3d-printer-launch/">ToolGuyd</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">ESP32 · Logiciel</span>
+          <h2 class="headline">ESPHome 2026.4.0 : +34 % de CPU d'un coup de cadence</h2>
+          <div class="story">
+            <p>
+              La version 2026.4.0 d'ESPHome, sortie le 16 avril, passe l'horloge par défaut de
+              l'ESP32, S2, S3 et C5 de 160 à 240 MHz — un pain sec de 34 % sur les opérations
+              CPU-bound, et 40 ko d'IRAM supplémentaires débloqués pour vos automations. Le
+              firmware gagne également la signature OTA, bienvenue. Petit avertissement : la
+              consommation grimpe, les nœuds sur batterie peuvent redescendre à 160 MHz via une
+              option de configuration.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.hackster.io/news/esphome-2026-4-0-brings-a-big-performance-boost-for-the-espressif-esp32-with-breaking-changes-too-006b26e1b445">Hackster.io</a>
+            </p>
+
+            <figure class="figure">
+              <svg class="chart-svg" viewBox="0 0 360 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparatif fréquence et performance CPU ESPHome">
+                <!-- grid -->
+                <g class="grid">
+                  <line x1="50" y1="30"  x2="340" y2="30" />
+                  <line x1="50" y1="70"  x2="340" y2="70" />
+                  <line x1="50" y1="110" x2="340" y2="110" />
+                </g>
+                <!-- axes -->
+                <g class="axis">
+                  <path d="M50 150 L340 150" />
+                  <path d="M50 20 L50 150" />
+                </g>
+                <!-- Bars: v2026.3 @160MHz vs v2026.4 @240MHz -->
+                <rect class="bar-ink" x="90"  y="95"  width="50" height="55" />
+                <rect class="bar-red" x="160" y="45"  width="50" height="105" />
+                <rect class="bar-ink" x="240" y="100" width="50" height="50" />
+                <rect class="bar-red" x="310" y="30"  width="30" height="120" opacity="0"/>
+                <!-- Second pair: API calls/s -->
+                <rect class="bar-blue" x="255" y="70" width="50" height="80" />
+                <!-- Labels -->
+                <text x="115" y="168" text-anchor="middle" font-size="9" letter-spacing="1">CLOCK (MHz)</text>
+                <text x="265" y="168" text-anchor="middle" font-size="9" letter-spacing="1">API / sec</text>
+                <text x="115" y="90"  text-anchor="middle" font-size="10" font-weight="700">160</text>
+                <text x="185" y="40"  text-anchor="middle" font-size="10" font-weight="700" fill="#b43a2d">240</text>
+                <text x="265" y="95"  text-anchor="middle" font-size="10" font-weight="700">×1</text>
+                <text x="280" y="65"  text-anchor="middle" font-size="10" font-weight="700" fill="#2a4d69">×1.34</text>
+                <!-- Legend -->
+                <rect x="50" y="10" width="10" height="10" class="bar-ink" />
+                <text x="65" y="19" font-size="9" letter-spacing="0.5">2026.3.x</text>
+                <rect x="120" y="10" width="10" height="10" class="bar-red" />
+                <text x="135" y="19" font-size="9" letter-spacing="0.5" fill="#b43a2d">2026.4.0 (MHz)</text>
+                <rect x="230" y="10" width="10" height="10" class="bar-blue" />
+                <text x="245" y="19" font-size="9" letter-spacing="0.5" fill="#2a4d69">2026.4.0 (débit API)</text>
+              </svg>
+              <figcaption><strong>Fig. 1</strong>Sources : notes de version ESPHome 2026.4.0.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Open Hardware · Kickstarter</span>
+          <h2 class="headline">WiQwiic-32 : huit ports Qwiic autour d'un ESP32-S3</h2>
+          <div class="story">
+            <p>
+              Publiée aujourd'hui sur CNX Software, la WiQwiic-32 de Hack The Board empile
+              huit connecteurs Qwiic I²C autour d'un ESP32-S3-WROOM-1, avec écran TFT 1,14″,
+              micro embarqué, buzzer et USB-C. Pas un fer à souder à sortir pour prototyper :
+              Kickstarter à partir de 65 $ (94 $ avec kit BME280, bouton et LED).
+            </p>
+            <figure class="figure halftone">
+              <img src="https://www.cnx-software.com/wp-content/uploads/2026/04/WiQwiic-32-USB-C-development-board.jpg" alt="WiQwiic-32, carte IoT USB-C avec huit connecteurs Qwiic" />
+              <figcaption><strong>Cliché</strong>Carte WiQwiic-32 avec ses huit Qwiic et écran 1,14″ (CNX Software).</figcaption>
+            </figure>
+            <p class="source">
+              Source :
+              <a href="https://www.cnx-software.com/2026/04/17/wiqwiic-32-a-compact-usb-c-iot-board-with-eight-qwiic-connectors/">CNX Software — 17 avril 2026</a>
+            </p>
+          </div>
+        </section>
+
+        <div class="pullquote">
+          « 1 000 000 de bascules de buses en test de cyclage, zéro dégradation de performance. »
+          <cite>Bambu Lab, communiqué X2D</cite>
+        </div>
+
+        <section class="section">
+          <span class="kicker ink">Impression 3D · Multi-matériaux</span>
+          <h2 class="headline">Bondtech INDX : huit outils passifs, une tête intelligente</h2>
+          <p class="subhead">Prusa et Bondtech rouvrent le dossier tool-changer, version CORE One.</p>
+          <div class="story">
+            <p>
+              Annoncé à Formnext puis précisé cette semaine, le système INDX débarque en
+              exclusivité sur la Prusa CORE One. L'idée est radicale : une seule « Smart Head »
+              active (chauffe par induction sans contact, double entraînement adaptatif) et
+              jusqu'à huit outils passifs, dépourvus d'électronique. Résultat, chaque matériau
+              a son nozzle dédié — plus de purge, plus de mélanges parasites.
+            </p>
+            <p>
+              Bondtech annonce un swap en 12 à 16 secondes selon le filament. L'édition
+              « Founders » (1 000 pièces en précommande) a déjà fait sold-out ; la version
+              retail est promise pour le deuxième trimestre 2026.
+            </p>
+            <figure class="figure halftone">
+              <img src="https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-blog-prod/2025/11/c8289261-cleaned-up-tool-detail-indx_3840-1024x683.jpg" alt="Bondtech INDX — outils passifs pour Prusa CORE One" />
+              <figcaption><strong>Cliché</strong>Les outils INDX, sans électronique embarquée (Prusa Research).</figcaption>
+            </figure>
+            <p class="source">
+              Sources :
+              <a href="https://blog.prusa3d.com/introducing-the-indx-fast-and-affordable-8-material-printing-exclusively-on-the-core-one_125242/">Prusa Blog</a>
+              · <a href="https://www.bondtech.se/indx-by-bondtech/">Bondtech</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Laser · Atelier</span>
+          <h2 class="headline">Aplatir la gaine d'évacuation, gagner 12 cm au mur</h2>
+          <div class="story">
+            <p>
+              Couvert par Hackaday le 14 avril, le projet de [TheNeedleStacker] transforme
+              une gaine ronde de 6″ en section aplatie de 19″ × 1,5″ pour coller son graveur
+              laser au mur sans étouffer l'extraction. Le capot transparent permet de visualiser
+              le flux de fumée — une jolie vignette pédagogique — avec une baisse de débit
+              légère mais mesurable.
+            </p>
+
+            <figure class="figure">
+              <svg class="chart-svg" viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma comparatif gaine ronde vs gaine aplatie">
+                <!-- Round duct -->
+                <circle cx="70" cy="75" r="38" fill="none" stroke="#2a2520" stroke-width="2" />
+                <text x="70" y="79" text-anchor="middle" font-size="10" font-weight="700">Ø 6&quot;</text>
+                <text x="70" y="132" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">RONDE · 76 mm</text>
+
+                <!-- Arrow -->
+                <path d="M130 75 L180 75" stroke="#b43a2d" stroke-width="2" />
+                <path d="M180 75 L170 70 L170 80 Z" fill="#b43a2d" />
+
+                <!-- Flat duct -->
+                <rect x="200" y="68" width="140" height="14" fill="none" stroke="#2a2520" stroke-width="2" />
+                <text x="270" y="79" text-anchor="middle" font-size="9" font-weight="700">19&quot; × 1,5&quot;</text>
+                <text x="270" y="132" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">APLATIE · 38 mm d'épaisseur</text>
+
+                <!-- Wall hatching -->
+                <g stroke="#2a2520" stroke-width="0.8">
+                  <line x1="344" y1="20" x2="344" y2="130" />
+                  <line x1="344" y1="20" x2="352" y2="28" />
+                  <line x1="344" y1="35" x2="352" y2="43" />
+                  <line x1="344" y1="50" x2="352" y2="58" />
+                  <line x1="344" y1="65" x2="352" y2="73" />
+                  <line x1="344" y1="80" x2="352" y2="88" />
+                  <line x1="344" y1="95" x2="352" y2="103" />
+                  <line x1="344" y1="110" x2="352" y2="118" />
+                </g>
+              </svg>
+              <figcaption><strong>Schéma</strong>Gaine ronde vs gaine aplatie : même surface, encombrement divisé.</figcaption>
+            </figure>
+
+            <p class="source">
+              Source :
+              <a href="https://hackaday.com/2026/04/14/flattening-the-exhaust-of-a-laser-cutter-to-save-space/">Hackaday — Flattening The Exhaust</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">ESP32 · Guide</span>
+          <h2 class="headline">ESP-NOW Walkie-Talkies : Adafruit publie le mode d'emploi</h2>
+          <div class="story">
+            <p>
+              Mise en ligne ce matin par Adafruit, la nouvelle fiche « Learning System » montre
+              comment assembler une paire de talkies-walkies à l'ancienne sans routeur, ni
+              appairage Bluetooth : juste de l'ESP-NOW, de l'audio PCM et une poignée de
+              boutons. De quoi redonner des idées pour les jeux de piste de mai.
+            </p>
+
+            <figure class="figure">
+              <svg class="chart-svg" viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma ESP-NOW pair-to-pair sans infrastructure">
+                <!-- Node A -->
+                <rect x="30" y="40" width="80" height="50" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
+                <text x="70" y="62" text-anchor="middle" font-size="10" font-weight="700">ESP32 · A</text>
+                <text x="70" y="78" text-anchor="middle" font-size="8">PTT + I²S mic</text>
+
+                <!-- Node B -->
+                <rect x="250" y="40" width="80" height="50" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
+                <text x="290" y="62" text-anchor="middle" font-size="10" font-weight="700">ESP32 · B</text>
+                <text x="290" y="78" text-anchor="middle" font-size="8">I²S out + HP</text>
+
+                <!-- Wireless arrows -->
+                <g stroke="#b43a2d" stroke-width="1.6" fill="none">
+                  <path d="M115 55 Q180 25 245 55" />
+                  <path d="M245 75 Q180 105 115 75" />
+                </g>
+                <text x="180" y="20" text-anchor="middle" font-size="9" fill="#b43a2d" letter-spacing="1.5">ESP-NOW · 2,4 GHz</text>
+
+                <!-- Labels -->
+                <text x="180" y="125" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">Pair-to-pair · sans routeur · sans appairage</text>
+              </svg>
+              <figcaption><strong>Schéma</strong>Liaison ESP-NOW : deux ESP32 discutent sans Wi-Fi infrastructure.</figcaption>
+            </figure>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/">Adafruit Learning System — Guide ESP-NOW Walkie Talkies</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker ink">Silicium · RISC-V</span>
+          <h2 class="headline">Canonical : « 2026, année de RISC-V sur desktop et serveur »</h2>
+          <div class="story">
+            <p>
+              Changement de rhétorique du côté d'Ubuntu : après une année 2025 placée sous le
+              signe du « readiness », Canonical annonce que 2026 sera celle du passage à
+              l'échelle. Objectif : voir débarquer des produits grand public RISC-V — portables,
+              NAS, SBC — pilotés par une Ubuntu qui se veut « de niveau production ».
+            </p>
+            <p>
+              En parallèle, RISE (Rise for Open Source) ouvre des <em>GitHub Runners</em>
+              RISC-V gratuits à tout projet open source qui veut intégrer la cible dans sa
+              CI — un problème d'infrastructure qui freinait l'adoption en pratique.
+            </p>
+            <p class="source">
+              Sources :
+              <a href="https://www.hackster.io/news/canonical-declares-that-2026-is-the-year-of-ubuntu-linux-on-the-risc-v-desktop-server-and-more-850a24c1e8b1">Hackster — Canonical</a>
+              · <a href="https://www.hackster.io/news/rise-launches-risc-v-github-runners-providing-ci-and-build-services-free-to-open-source-projects-559fa92fa713">Hackster — RISE Runners</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Carte du jour</span>
+          <h2 class="headline">IOX-77 : un ESP32-C3 entouré de cinq petits CH32V003</h2>
+          <div class="story">
+            <p>
+              Repéré par Adafruit, l'IOX-77 colle un ESP32-C3-MINI-1-N4 au milieu de cinq
+              microcontrôleurs CH32V003, reliés au cœur ESP32 par un bus I²C. Résultat : 75
+              GPIO, chacun piloté par un petit RISC-V à 0,10 $, sur un devboard qui tient dans
+              la paume. Ou comment refaire le CPLD du pauvre à grand renfort de silicium
+              bon marché.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/2026/04/14/an-esp32-based-devboard-with-5-ch32v003-mcus-and-75-gpio">Adafruit — IOX-77</a>
+            </p>
+
+            <figure class="figure">
+              <svg class="chart-svg" viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Topologie IOX-77, ESP32-C3 central relié à 5 CH32V003 via I²C">
+                <!-- center ESP32-C3 -->
+                <rect x="140" y="70" width="80" height="40" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
+                <text x="180" y="88" text-anchor="middle" font-size="10" font-weight="700">ESP32-C3</text>
+                <text x="180" y="102" text-anchor="middle" font-size="8">MINI-1-N4</text>
+
+                <!-- 5 CH32V003 around -->
+                <g font-family="Iowan Old Style, Georgia, serif">
+                  <rect x="30"  y="20"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
+                  <text x="65" y="39" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 1</text>
+
+                  <rect x="260" y="20"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
+                  <text x="295" y="39" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 2</text>
+
+                  <rect x="10"  y="80"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
+                  <text x="45" y="99" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 3</text>
+
+                  <rect x="280" y="80"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
+                  <text x="315" y="99" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 4</text>
+
+                  <rect x="145" y="135" width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
+                  <text x="180" y="154" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 5</text>
+                </g>
+
+                <!-- I2C lines -->
+                <g stroke="#b43a2d" stroke-width="1.2" fill="none">
+                  <path d="M140 75 L100 50" />
+                  <path d="M220 75 L260 50" />
+                  <path d="M140 92 L80 95" />
+                  <path d="M220 92 L280 95" />
+                  <path d="M180 110 L180 135" />
+                </g>
+                <text x="180" y="12" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#b43a2d">BUS I²C · 75 GPIO EXPOSÉS</text>
+              </svg>
+              <figcaption><strong>Schéma</strong>Topologie IOX-77 : cinq satellites CH32V003 autour d'un ESP32-C3.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Brèves de l'atelier</span>
+          <ul class="brief-list">
+            <li>
+              <strong>WeAct CH32V006F8U6 Mini Core :</strong> carte RISC-V 48 MHz en USB-C à
+              2 $, I/O 3,3 V ou 5 V — idéal pour la prototypage express.
+              <a href="https://www.cnx-software.com/2026/04/06/2-weact-ch32v006f8u6-mini-core-board-features-ch32v006-risc-v-mcu-supports-3-3v-or-5v-i-o-voltage/">[CNX Software]</a>
+            </li>
+            <li>
+              <strong>ESP32-BlueJammer :</strong> un projet qui associe ESP32 et modules nRF24
+              pour brouiller BLE, Wi-Fi et télécommandes — à réserver au labo, évidemment.
+              <a href="https://blog.adafruit.com/2026/04/09/esp32-bluejammer-disrupts-various-devices-using-esp32-and-nrf24-modules/">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>Seeed reBot Arm B601-DM :</strong> bras 6 axes open source (767 mm de
+              portée, 1,5 kg de charge) pour apprendre la robotique embarquée.
+              <a href="https://www.cnx-software.com/">[CNX Software]</a>
+            </li>
+            <li>
+              <strong>Boardcon Tiny1126B :</strong> SoM Rockchip RV1126B en 34 × 30 mm pour
+              vision embarquée, caméras intelligentes, DMS et BSD.
+              <a href="https://www.cnx-software.com/">[CNX Software]</a>
+            </li>
+            <li>
+              <strong>ESP32 Weather Dashboard :</strong> station météo ESP32-S3 avec dalle 7″
+              tactile, cartes satellites et prévisions à 16 jours, sur Hackster.
+              <a href="https://www.hackster.io/mircemk/esp32-weather-dashboard-with-satellite-maps-and-16-day-forec-7ee044">[Hackster]</a>
+            </li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">ESP32</span>
+            <span class="tag">Bambu X2D</span>
+            <span class="tag">Prusa INDX</span>
+            <span class="tag">ESPHome</span>
+            <span class="tag">Laser</span>
+            <span class="tag">RISC-V</span>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        La Gazette du Maker · Compilée le 17 avril 2026 · Sources : Bambu Lab, Prusa, Hackaday,
+        Adafruit, Hackster.io, CNX Software, Tom's Hardware.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
