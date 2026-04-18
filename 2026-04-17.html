@@ -25,8 +25,8 @@
 
       <p class="lede">
         Bambu rebat les cartes avec son X2D bi-buses, ESPHome offre 34 % de nerf aux ESP32,
-        Prusa et Bondtech désassemblent le tool-changer en huit outils… Et sur l'établi,
-        on aplatit des gaines de fumée. Panorama des pépites du jour.
+        Prusa dégaine le H2C avec Vortek anti-purge… Et en loisir, NES tient dans un ESP32.
+        Panorama des pépites du jour.
       </p>
 
       <figure class="figure hero-figure halftone">
@@ -183,93 +183,51 @@
         </section>
 
         <section class="section">
-          <span class="kicker">Laser · Atelier</span>
-          <h2 class="headline">Aplatir la gaine d'évacuation, gagner 12 cm au mur</h2>
+          <span class="kicker">Impression 3D · Formnext</span>
+          <h2 class="headline">Prusa H2C : Vortek élimine la purge entre les buses</h2>
           <div class="story">
             <p>
-              Couvert par Hackaday le 14 avril, le projet de [TheNeedleStacker] transforme
-              une gaine ronde de 6″ en section aplatie de 19″ × 1,5″ pour coller son graveur
-              laser au mur sans étouffer l'extraction. Le capot transparent permet de visualiser
-              le flux de fumée — une jolie vignette pédagogique — avec une baisse de débit
-              légère mais mesurable.
+              Dévoilé à Formnext (salon de la fabrica additive), le H2C de Prusa Research
+              intègre la technologie Vortek, conçue pour minimiser les « purges » — ces
+              déjections de filament qui font perdre du temps et du matériau lors des
+              changements de couleur. Chaque bus étant dédiée à un matériau, la nozzle
+              Vortek réduit radicalement les mélanges parasites en transition.
             </p>
-
-            <figure class="figure">
-              <svg class="chart-svg" viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma comparatif gaine ronde vs gaine aplatie">
-                <!-- Round duct -->
-                <circle cx="70" cy="75" r="38" fill="none" stroke="#2a2520" stroke-width="2" />
-                <text x="70" y="79" text-anchor="middle" font-size="10" font-weight="700">Ø 6&quot;</text>
-                <text x="70" y="132" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">RONDE · 76 mm</text>
-
-                <!-- Arrow -->
-                <path d="M130 75 L180 75" stroke="#b43a2d" stroke-width="2" />
-                <path d="M180 75 L170 70 L170 80 Z" fill="#b43a2d" />
-
-                <!-- Flat duct -->
-                <rect x="200" y="68" width="140" height="14" fill="none" stroke="#2a2520" stroke-width="2" />
-                <text x="270" y="79" text-anchor="middle" font-size="9" font-weight="700">19&quot; × 1,5&quot;</text>
-                <text x="270" y="132" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">APLATIE · 38 mm d'épaisseur</text>
-
-                <!-- Wall hatching -->
-                <g stroke="#2a2520" stroke-width="0.8">
-                  <line x1="344" y1="20" x2="344" y2="130" />
-                  <line x1="344" y1="20" x2="352" y2="28" />
-                  <line x1="344" y1="35" x2="352" y2="43" />
-                  <line x1="344" y1="50" x2="352" y2="58" />
-                  <line x1="344" y1="65" x2="352" y2="73" />
-                  <line x1="344" y1="80" x2="352" y2="88" />
-                  <line x1="344" y1="95" x2="352" y2="103" />
-                  <line x1="344" y1="110" x2="352" y2="118" />
-                </g>
-              </svg>
-              <figcaption><strong>Schéma</strong>Gaine ronde vs gaine aplatie : même surface, encombrement divisé.</figcaption>
-            </figure>
-
+            <p>
+              L'imprimante s'inscrit comme une alternative aux systèmes INDX de Bondtech,
+              mais sur une architecture maison Prusa, avec suivi temps réel de la qualité
+              d'extrusion et calibration adaptative.
+            </p>
             <p class="source">
               Source :
-              <a href="https://hackaday.com/2026/04/14/flattening-the-exhaust-of-a-laser-cutter-to-save-space/">Hackaday — Flattening The Exhaust</a>
+              <a href="https://www.tomshardware.com/3d-printing/bambu-lab-and-prusa-show-off-new-3d-printers-at-formnext-h2c-dual-nozzle-uses-vortek-nozzle-to-eliminate-3d-printer-poop">Tom's Hardware — Formnext 2025</a>
+              · <a href="https://3dadept.com/one-printhead-two-nozzles-bambu-lab-resets-the-x-series/">3D Adept Media</a>
             </p>
           </div>
         </section>
 
         <section class="section">
-          <span class="kicker blue">ESP32 · Guide</span>
-          <h2 class="headline">ESP-NOW Walkie-Talkies : Adafruit publie le mode d'emploi</h2>
+          <span class="kicker blue">Jeu · Rétro-informatique</span>
+          <h2 class="headline">NES Emulator tient dans une poche ESP32-S3</h2>
           <div class="story">
             <p>
-              Mise en ligne ce matin par Adafruit, la nouvelle fiche « Learning System » montre
-              comment assembler une paire de talkies-walkies à l'ancienne sans routeur, ni
-              appairage Bluetooth : juste de l'ESP-NOW, de l'audio PCM et une poignée de
-              boutons. De quoi redonner des idées pour les jeux de piste de mai.
+              Publiée sur Hackster.io, la réalisation de [dsnindustries] empile une Nintendo
+              Entertainment System entière — ROM loader, CPU 6502 virtualisé, PPU, APU — dans
+              un ESP32-S3 de format poche. L'écran TFT 1,69″ affiche 280 × 240, huit boutons
+              tactiles pilotent la partie. Stockage des ROM sur micro-SD. Audio expérimental
+              via amplificateur I²S MAX98357A.
             </p>
-
-            <figure class="figure">
-              <svg class="chart-svg" viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma ESP-NOW pair-to-pair sans infrastructure">
-                <!-- Node A -->
-                <rect x="30" y="40" width="80" height="50" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
-                <text x="70" y="62" text-anchor="middle" font-size="10" font-weight="700">ESP32 · A</text>
-                <text x="70" y="78" text-anchor="middle" font-size="8">PTT + I²S mic</text>
-
-                <!-- Node B -->
-                <rect x="250" y="40" width="80" height="50" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
-                <text x="290" y="62" text-anchor="middle" font-size="10" font-weight="700">ESP32 · B</text>
-                <text x="290" y="78" text-anchor="middle" font-size="8">I²S out + HP</text>
-
-                <!-- Wireless arrows -->
-                <g stroke="#b43a2d" stroke-width="1.6" fill="none">
-                  <path d="M115 55 Q180 25 245 55" />
-                  <path d="M245 75 Q180 105 115 75" />
-                </g>
-                <text x="180" y="20" text-anchor="middle" font-size="9" fill="#b43a2d" letter-spacing="1.5">ESP-NOW · 2,4 GHz</text>
-
-                <!-- Labels -->
-                <text x="180" y="125" text-anchor="middle" font-size="9" letter-spacing="1" fill="#5a534a">Pair-to-pair · sans routeur · sans appairage</text>
-              </svg>
-              <figcaption><strong>Schéma</strong>Liaison ESP-NOW : deux ESP32 discutent sans Wi-Fi infrastructure.</figcaption>
+            <p>
+              Le code est propre, modulaire, sans dépendances externes pour les drivers vidéo.
+              Un pas de plus vers la console de poche ultra-bon-marché.
+            </p>
+            <figure class="figure halftone">
+              <img src="https://hackster.imgix.net/uploads/attachments/1932376/_m1CEM5e9yO.blob?auto=compress%2Cformat&w=900&h=675&fit=min" alt="Console NES portable ESP32-S3" />
+              <figcaption><strong>Cliché</strong>Émulateur NES sur ESP32-S3 : 8 jeux, 16 Mo de flash, 8 Mo de PSRAM (Hackster.io).</figcaption>
             </figure>
             <p class="source">
               Source :
-              <a href="https://blog.adafruit.com/">Adafruit Learning System — Guide ESP-NOW Walkie Talkies</a>
+              <a href="https://www.hackster.io/dsnindustries/how-i-build-working-esp32-based-nes-emulator-in-2026-688b38">Hackster.io — NES Emulator on ESP32</a>
             </p>
           </div>
         </section>
@@ -298,58 +256,29 @@
         </section>
 
         <section class="section">
-          <span class="kicker blue">Carte du jour</span>
-          <h2 class="headline">IOX-77 : un ESP32-C3 entouré de cinq petits CH32V003</h2>
+          <span class="kicker blue">Station météo · Tableau de bord</span>
+          <h2 class="headline">Tableau de bord ESP32-S3 : météo temps réel et prévisions 16 jours</h2>
           <div class="story">
             <p>
-              Repéré par Adafruit, l'IOX-77 colle un ESP32-C3-MINI-1-N4 au milieu de cinq
-              microcontrôleurs CH32V003, reliés au cœur ESP32 par un bus I²C. Résultat : 75
-              GPIO, chacun piloté par un petit RISC-V à 0,10 $, sur un devboard qui tient dans
-              la paume. Ou comment refaire le CPLD du pauvre à grand renfort de silicium
-              bon marché.
+              Publiée sur Hackster par [mircemk], cette station météo en grappe d'écran
+              7″ monté sur ESP32-S3 affiche en temps réel température, pression, humidité,
+              vitesse du vent, UV et radiation solaire, à côté de cartes satellite, couches
+              nuageuses et prévisions détaillées. Trois styles de cartes (sombre, topo,
+              OSM), trois couches météo superposables, sept niveaux de zoom.
             </p>
+            <p>
+              Branchement transparent sur OpenWeatherMap et Open-Meteo (données gratuites),
+              refresh toutes les 10 minutes. Coût total 30 $ — c'est de l'affichage meteo
+              pour rien, aucune soudure.
+            </p>
+            <figure class="figure halftone">
+              <img src="https://hackster.imgix.net/uploads/attachments/1947165/_LCIJiJ3bSh.blob?auto=compress%2Cformat&w=900&h=675&fit=min" alt="Tableau de bord météo 7 pouces ESP32-S3" />
+              <figcaption><strong>Cliché</strong>Station météo sur écran tactile CrowPanel 7″ : radar, prévisions, satellites (Hackster.io).</figcaption>
+            </figure>
             <p class="source">
               Source :
-              <a href="https://blog.adafruit.com/2026/04/14/an-esp32-based-devboard-with-5-ch32v003-mcus-and-75-gpio">Adafruit — IOX-77</a>
+              <a href="https://www.hackster.io/mircemk/esp32-weather-dashboard-with-satellite-maps-and-16-day-forec-7ee044">Hackster.io — ESP32 Weather Dashboard</a>
             </p>
-
-            <figure class="figure">
-              <svg class="chart-svg" viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Topologie IOX-77, ESP32-C3 central relié à 5 CH32V003 via I²C">
-                <!-- center ESP32-C3 -->
-                <rect x="140" y="70" width="80" height="40" fill="#fffaf0" stroke="#2a2520" stroke-width="1.5" />
-                <text x="180" y="88" text-anchor="middle" font-size="10" font-weight="700">ESP32-C3</text>
-                <text x="180" y="102" text-anchor="middle" font-size="8">MINI-1-N4</text>
-
-                <!-- 5 CH32V003 around -->
-                <g font-family="Iowan Old Style, Georgia, serif">
-                  <rect x="30"  y="20"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
-                  <text x="65" y="39" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 1</text>
-
-                  <rect x="260" y="20"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
-                  <text x="295" y="39" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 2</text>
-
-                  <rect x="10"  y="80"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
-                  <text x="45" y="99" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 3</text>
-
-                  <rect x="280" y="80"  width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
-                  <text x="315" y="99" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 4</text>
-
-                  <rect x="145" y="135" width="70" height="30" fill="#fffaf0" stroke="#2a2520" />
-                  <text x="180" y="154" text-anchor="middle" font-size="9" font-weight="700">CH32V003 · 5</text>
-                </g>
-
-                <!-- I2C lines -->
-                <g stroke="#b43a2d" stroke-width="1.2" fill="none">
-                  <path d="M140 75 L100 50" />
-                  <path d="M220 75 L260 50" />
-                  <path d="M140 92 L80 95" />
-                  <path d="M220 92 L280 95" />
-                  <path d="M180 110 L180 135" />
-                </g>
-                <text x="180" y="12" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#b43a2d">BUS I²C · 75 GPIO EXPOSÉS</text>
-              </svg>
-              <figcaption><strong>Schéma</strong>Topologie IOX-77 : cinq satellites CH32V003 autour d'un ESP32-C3.</figcaption>
-            </figure>
           </div>
         </section>
 
@@ -362,33 +291,33 @@
               <a href="https://www.cnx-software.com/2026/04/06/2-weact-ch32v006f8u6-mini-core-board-features-ch32v006-risc-v-mcu-supports-3-3v-or-5v-i-o-voltage/">[CNX Software]</a>
             </li>
             <li>
-              <strong>ESP32-BlueJammer :</strong> un projet qui associe ESP32 et modules nRF24
-              pour brouiller BLE, Wi-Fi et télécommandes — à réserver au labo, évidemment.
-              <a href="https://blog.adafruit.com/2026/04/09/esp32-bluejammer-disrupts-various-devices-using-esp32-and-nrf24-modules/">[Adafruit]</a>
+              <strong>IOX-77 :</strong> devboard ESP32-C3 entouré de 5 × CH32V003, 75 GPIO
+              exposées, tout piloté par bus I²C — multiplex du pauvre.
+              <a href="https://blog.adafruit.com/2026/04/14/an-esp32-based-devboard-with-5-ch32v003-mcus-and-75-gpio">[Adafruit]</a>
             </li>
             <li>
               <strong>Seeed reBot Arm B601-DM :</strong> bras 6 axes open source (767 mm de
-              portée, 1,5 kg de charge) pour apprendre la robotique embarquée.
+              portée, 1,5 kg de charge, 0,2 mm de répétabilité) pour robotique embarquée.
               <a href="https://www.cnx-software.com/">[CNX Software]</a>
             </li>
             <li>
-              <strong>Boardcon Tiny1126B :</strong> SoM Rockchip RV1126B en 34 × 30 mm pour
-              vision embarquée, caméras intelligentes, DMS et BSD.
+              <strong>Boardcon Tiny1126B :</strong> SoM Rockchip RV1126B ultra-compact
+              (34 × 30 mm) pour caméras intelligentes, DMS et systèmes de détection.
               <a href="https://www.cnx-software.com/">[CNX Software]</a>
             </li>
             <li>
-              <strong>ESP32 Weather Dashboard :</strong> station météo ESP32-S3 avec dalle 7″
-              tactile, cartes satellites et prévisions à 16 jours, sur Hackster.
-              <a href="https://www.hackster.io/mircemk/esp32-weather-dashboard-with-satellite-maps-and-16-day-forec-7ee044">[Hackster]</a>
+              <strong>Adafruit ESP-NOW Walkie-Talkies :</strong> nouveau Learning System :
+              paire de talkies-walkies sans routeur ni Bluetooth, juste ESP-NOW et audio PCM.
+              <a href="https://blog.adafruit.com/">[Adafruit]</a>
             </li>
           </ul>
           <div class="tag-row">
             <span class="tag">ESP32</span>
             <span class="tag">Bambu X2D</span>
-            <span class="tag">Prusa INDX</span>
+            <span class="tag">Prusa H2C</span>
             <span class="tag">ESPHome</span>
-            <span class="tag">Laser</span>
-            <span class="tag">RISC-V</span>
+            <span class="tag">Jeu Rétro</span>
+            <span class="tag">Météo</span>
           </div>
         </section>
 
