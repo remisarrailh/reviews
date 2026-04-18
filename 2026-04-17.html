@@ -233,24 +233,28 @@
         </section>
 
         <section class="section">
-          <span class="kicker ink">Silicium · RISC-V</span>
-          <h2 class="headline">Canonical : « 2026, année de RISC-V sur desktop et serveur »</h2>
+          <span class="kicker">Capteurs · Qualité d'air</span>
+          <h2 class="headline">Project Aura v1.1 : moniteur CO₂ open source, six capteurs industriels</h2>
           <div class="story">
             <p>
-              Changement de rhétorique du côté d'Ubuntu : après une année 2025 placée sous le
-              signe du « readiness », Canonical annonce que 2026 sera celle du passage à
-              l'échelle. Objectif : voir débarquer des produits grand public RISC-V — portables,
-              NAS, SBC — pilotés par une Ubuntu qui se veut « de niveau production ».
+              Montée à la dernière version, la station Aura de [21cncstudio] empile des
+              capteurs Sensirion (CO₂, PM2.5, composés volatiles, NOx, température, pression)
+              sur un écran tactile IPS 4,3″. Particularité : assemblage sans soudure, détection
+              auto des modules optionnels (CO, formaldéhyde), intégration Home Assistant native
+              via MQTT, sortie DAC 0–10 V pour piloter automatiquement la ventilation.
             </p>
             <p>
-              En parallèle, RISE (Rise for Open Source) ouvre des <em>GitHub Runners</em>
-              RISC-V gratuits à tout projet open source qui veut intégrer la cible dans sa
-              CI — un problème d'infrastructure qui freinait l'adoption en pratique.
+              Trois formes de boîtier (bureau, mural, industriel), firmware GPL3+ 100 % local,
+              zéro dépendance cloud. Voilà comment transformer un ESP32-S3 en véritable
+              station de monitoring d'environnement intérieur.
             </p>
+            <figure class="figure halftone">
+              <img src="https://hackster.imgix.net/uploads/attachments/1940593/_OPJc6G09MF.blob?auto=compress%2Cformat&w=900&h=675&fit=min" alt="Project Aura v1.1 — moniteur de qualité d'air ESP32-S3" />
+              <figcaption><strong>Cliché</strong>Station Aura avec écran 4,3″ et capteurs Sensirion : CO₂, PM2.5, VOC, NOx (Hackster.io).</figcaption>
+            </figure>
             <p class="source">
-              Sources :
-              <a href="https://www.hackster.io/news/canonical-declares-that-2026-is-the-year-of-ubuntu-linux-on-the-risc-v-desktop-server-and-more-850a24c1e8b1">Hackster — Canonical</a>
-              · <a href="https://www.hackster.io/news/rise-launches-risc-v-github-runners-providing-ci-and-build-services-free-to-open-source-projects-559fa92fa713">Hackster — RISE Runners</a>
+              Source :
+              <a href="https://www.hackster.io/21cncstudio/project-aura-v1-1-open-source-esp32-aq-what-s-new-79067e">Hackster.io — Project Aura v1.1</a>
             </p>
           </div>
         </section>
@@ -287,7 +291,7 @@
           <ul class="brief-list">
             <li>
               <strong>WeAct CH32V006F8U6 Mini Core :</strong> carte RISC-V 48 MHz en USB-C à
-              2 $, I/O 3,3 V ou 5 V — idéal pour la prototypage express.
+              2 $, I/O 3,3 V ou 5 V — le plus compétitif pour prototypage express.
               <a href="https://www.cnx-software.com/2026/04/06/2-weact-ch32v006f8u6-mini-core-board-features-ch32v006-risc-v-mcu-supports-3-3v-or-5v-i-o-voltage/">[CNX Software]</a>
             </li>
             <li>
@@ -296,19 +300,14 @@
               <a href="https://blog.adafruit.com/2026/04/14/an-esp32-based-devboard-with-5-ch32v003-mcus-and-75-gpio">[Adafruit]</a>
             </li>
             <li>
-              <strong>Seeed reBot Arm B601-DM :</strong> bras 6 axes open source (767 mm de
-              portée, 1,5 kg de charge, 0,2 mm de répétabilité) pour robotique embarquée.
+              <strong>Seeed reBot Arm B601-DM :</strong> bras 6 axes open source
+              (767 mm de portée, 1,5 kg, 0,2 mm de précision) pour apprentissage robotique.
               <a href="https://www.cnx-software.com/">[CNX Software]</a>
             </li>
             <li>
-              <strong>Boardcon Tiny1126B :</strong> SoM Rockchip RV1126B ultra-compact
-              (34 × 30 mm) pour caméras intelligentes, DMS et systèmes de détection.
-              <a href="https://www.cnx-software.com/">[CNX Software]</a>
-            </li>
-            <li>
-              <strong>Adafruit ESP-NOW Walkie-Talkies :</strong> nouveau Learning System :
-              paire de talkies-walkies sans routeur ni Bluetooth, juste ESP-NOW et audio PCM.
-              <a href="https://blog.adafruit.com/">[Adafruit]</a>
+              <strong>Smart Motion Sensor Light :</strong> capteur PIR + ESP32 pour allumage
+              automatique en sombre, avec relais et support futur de capteur luminosité.
+              <a href="https://www.hackster.io/asharma8604/smart-motion-sensor-light-with-esp32-e8d6a7">[Hackster]</a>
             </li>
           </ul>
           <div class="tag-row">
@@ -316,8 +315,8 @@
             <span class="tag">Bambu X2D</span>
             <span class="tag">Prusa H2C</span>
             <span class="tag">ESPHome</span>
+            <span class="tag">Capteurs</span>
             <span class="tag">Jeu Rétro</span>
-            <span class="tag">Météo</span>
           </div>
         </section>
 
