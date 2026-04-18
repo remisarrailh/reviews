@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Gazette du Maker — 18 avril 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="nav-home" href="index.html">← Retour au kiosque</a>
+    <article class="paper">
+      <header class="masthead">
+        <div class="eyebrow">Édition quotidienne · No. 002</div>
+        <h1>La Gazette du Maker</h1>
+        <div class="meta">
+          <span>Samedi 18 avril 2026</span>
+          <span class="center">« Le journal des bricoleurs éclairés »</span>
+          <span class="right">Prix : 0,00 € · Édition numérique</span>
+        </div>
+      </header>
+
+      <p class="lede">
+        Bambu frappe un grand coup avec la X2D, ESPHome accélère de 33 %, un SAMA5D27 tient dans
+        une boîte d'allumettes, et les weekenders ESP32 se régalent : la sélection du jour,
+        différente de celle du 16 avril, avec Hackaday, Adafruit, Hackster, CNX, PR Newswire et
+        OMG Laser.
+      </p>
+
+      <div class="columns">
+
+        <section class="section">
+          <span class="kicker">À la une · Impression 3D</span>
+          <h2 class="headline">Bambu Lab lance la X2D : double extrusion, vraie clôture thermique, 649 $</h2>
+          <p class="subhead">Le nouveau fleuron de Bambu promet des supports qui se détachent « sans effort ».</p>
+          <div class="story dropcap">
+            <p>
+              Annoncée hier, la Bambu Lab X2D est la première machine de la série X2. Sa particularité :
+              un vrai système double buse (pour imprimer supports et matière avec des têtes dédiées,
+              finies les traces de purge), une calibration automatique avant chaque impression, une
+              myriade de capteurs qui arrêtent la machine avant l'échec, et un chambre fermée à
+              température contrôlée avec filtration d'air à trois étages. Tarif annoncé : 649 $ /
+              629 € pour la version nue, 899 $ / 849 € pour la Combo avec AMS.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.prnewswire.com/news-releases/xcellence-made-simple-bambu-lab-launches-x2d-nextgen-flagship-3d-printer-featuring-dualextrusion-system-302745963.html">PR Newswire — Bambu Lab X2D</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Firmware</span>
+          <h2 class="headline">ESPHome 2026.4.0 : +33 % sur l'API, OTA signée et partitions sur-mesure</h2>
+          <div class="story">
+            <p>
+              La release d'avril d'ESPHome vient de tomber : par défaut, les ESP32 tournent désormais
+              à leur fréquence CPU maximale, ce qui donne un gain d'environ 33 % sur les opérations
+              API, libère 40 ko d'IRAM supplémentaires et introduit la vérification signée des mises
+              à jour OTA ainsi que des tables de partitions personnalisables. Attention cependant :
+              la note de version mentionne plusieurs breaking changes à vérifier avant de flasher
+              tout votre parc.
+            </p>
+            <p class="source">
+              Sources :
+              <a href="https://www.hackster.io/news/esphome-2026-4-0-brings-a-big-performance-boost-for-the-espressif-esp32-with-breaking-changes-too-006b26e1b445">Hackster — ESPHome 2026.4.0</a>
+              · <a href="https://esphome.io/changelog/2026.4.0/">Changelog officiel</a>
+            </p>
+          </div>
+        </section>
+
+        <div class="pullquote">
+          « 70 × 50 mm, 256 Mo de LPDDR2, Cortex-A5 à 500 MHz… un vrai petit Linux de poche, à
+          souder soi-même. »
+          <cite>Conclusive Engineering KSTR-SAMA5D27</cite>
+        </div>
+
+        <section class="section">
+          <span class="kicker">Open Hardware · SBC</span>
+          <h2 class="headline">KSTR-SAMA5D27 : un Linux industriel dans 70 × 50 mm</h2>
+          <div class="story">
+            <p>
+              Chez CNX Software, on découvre cette semaine le KSTR-SAMA5D27 de Conclusive
+              Engineering : un SBC ultra-compact bâti autour du SiP Microchip SAMA5D27 (Cortex-A5
+              à 500 MHz) avec 256 Mo de LPDDR2, slot microSD, EEPROM, Fast Ethernet, Wi-Fi 4,
+              Bluetooth 4.1 et USB-C. Un candidat sérieux pour les projets embarqués qui cherchent
+              la sobriété énergétique plutôt que la course aux cœurs.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.cnx-software.com/2026/04/16/conclusive-engineering-kstr-sama5d27-ultra-compact-sbc-microchip-sama5d27-sip/">CNX Software</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Raspberry Pi</span>
+          <h2 class="headline">Pironman 5 Pro Max : le Raspberry Pi 5 en tour PC</h2>
+          <div class="story">
+            <p>
+              Publié ce matin sur CNX, le test du Pironman 5 Pro Max de SunFounder transforme le
+              Raspberry Pi 5 en mini-tour avec écran tactile 4,3″, caméra 5 MP, haut-parleurs
+              stéréo et micro USB. Option UPS PiPower 5 pour les coupures secteur. Pas vraiment du
+              pur open hardware, mais un objet d'atelier qui fera plaisir aux amateurs de
+              dioramas rétro-PC.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.cnx-software.com/2026/04/18/pironman-5-pro-max-review-a-raspberry-pi-5-tower-pc-case-with-integrated-video-and-audio-capabilities-ups-kit/">CNX Software — Pironman 5 Pro Max</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker ink">Dev board</span>
+          <h2 class="headline">IOX-77 : 75 GPIO sur un ESP32-C3, le roi du brochage</h2>
+          <div class="story">
+            <p>
+              Hackster a repéré l'IOX-77, un devboard open source centré sur un ESP32-C3 mais qui
+              démultiplie ses 22 GPIO natifs en 75 broches disponibles via un étage d'expanders.
+              Un « King of I/O » qui vise les installations domotiques musclées et les rampes de
+              commande multi-relais sans passer par le grand frère S3.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.hackster.io/news/iox-77-the-new-king-of-i-o-b03c0f5f4db8">Hackster — IOX-77</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Gravure laser · Savoir-faire</span>
+          <h2 class="headline">Couleurs vibrantes au laser fibre : le vade-mecum d'OMG Laser</h2>
+          <div class="story">
+            <p>
+              Publié hier par OMG Laser, un guide détaillé explique comment obtenir des couleurs
+              vives sur acier inoxydable et titane avec un laser fibre MOPA. On y parle de la
+              fenêtre de fréquence 30–60 kHz, de la durée d'impulsion, du décalage de défocus qui
+              fait basculer du bleu profond au rose, et de la température d'oxydation locale
+              nécessaire. Lecture obligatoire pour les possesseurs de MOPA qui en ont marre du noir
+              et blanc.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.omglaser.com/engraving-metals-how-to-achieve-vibrant-color-marks-with-a-fiber-laser/">OMG Laser — Color Marks</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">Robotique · Open</span>
+          <h2 class="headline">AAEON CEXD-INTRBL : 180 TOPS pour humanoïdes et véhicules autonomes</h2>
+          <div class="story">
+            <p>
+              Dans la catégorie « open hardware musclé », AAEON présente un système de
+              développement robotique baptisé CEXD-INTRBL, motorisé par un Intel Core Ultra X7
+              Processor 358H 16 cœurs et 180 TOPS de NPU. Cible : plateformes humanoïdes et
+              véhicules autonomes de recherche. Les schémas et firmwares sont ouverts — un signal
+              fort dans un secteur traditionnellement très verrouillé.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.cnx-software.com/2026/04/16/intel-core-ultra-x7-358h-powered-open-robotics-development-system-targets-humanoid-robots-and-autonomous-vehicles/">CNX Software — AAEON CEXD-INTRBL</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Tutoriel du jour · ESP-NOW</span>
+          <h2 class="headline">Walkie-Talkies ESP-NOW : deux ESP32 suffisent pour se parler</h2>
+          <div class="story">
+            <p>
+              Adafruit a publié hier un guide complet pour bricoler un duo de talkies-walkies
+              basés sur le protocole ESP-NOW d'Espressif : la communication se fait de pair à
+              pair, sans Wi-Fi ni router, avec une latence faible. Audio compressé, bouton PTT,
+              batterie LiPo : tout le nécessaire est dans le guide, et c'est un excellent prétexte
+              pour apprendre ESP-NOW en famille.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/">Adafruit Learning System — ESP-NOW Walkie Talkies</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker blue">MicroPython</span>
+          <h2 class="headline">Un serveur MCP pour MicroPython : LLMs et REPL font ami-ami</h2>
+          <div class="story">
+            <p>
+              Également signalé par Adafruit cette semaine : un serveur
+              <em>Model Context Protocol</em> dédié à MicroPython. Connecté à un agent comme Claude
+              Code ou Cursor, il permet à l'IA d'exécuter du code dans le REPL, d'introspecter
+              l'état du microcontrôleur et de manipuler le filesystem. De quoi faire du débogage
+              conversationnel sur un ESP32 ou un RP2350 sans quitter l'éditeur.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://blog.adafruit.com/2026/04/15/an-mcp-server-for-micropython">Adafruit — MCP for MicroPython</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker">Week-end bidouille</span>
+          <h2 class="headline">Cinq projets ESP32 à tester ce week-end (et qu'on n'a jamais vus)</h2>
+          <div class="story">
+            <p>
+              How-To Geek compile sa sélection week-end du 17 au 19 avril : un
+              <strong>entraîneur de vocabulaire de bureau</strong> (ESP32 vanille + écran e-ink 2,9″),
+              un <strong>afficheur caméra</strong> avec bouton rotatif pour jongler entre plusieurs
+              sonnettes vidéo, un <strong>compteur de roue à chat</strong> (capteur à effet Hall,
+              aimant, intégration Home Assistant), et quelques autres surprises trouvées sur
+              Reddit ces derniers jours.
+            </p>
+            <p class="source">
+              Source :
+              <a href="https://www.howtogeek.com/unique-esp32-projects-youve-never-heard-of-to-try-this-weekend-apr-17-19/">How-To Geek</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <span class="kicker ink">Brèves de l'atelier</span>
+          <ul class="brief-list">
+            <li>
+              <strong>No-Code Frost Alert :</strong> Adafruit décrit un détecteur de gel pour semis
+              sans écrire une ligne de code, à base de WipperSnapper.
+              <a href="https://blog.adafruit.com/">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>Ad-blocker de poche :</strong> un tuto Adafruit d'hier explique comment monter un
+              Pi-hole miniature à l'échelle d'un microcontrôleur.
+              <a href="https://blog.adafruit.com/">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>Oberon System 3 sur Pi 3B :</strong> portage natif du système de Niklaus Wirth
+              sur Raspberry Pi 3B, un retour aux sources du langage Oberon.
+              <a href="https://blog.adafruit.com/2026/04/14/a-native-raspberry-pi-3b-version-of-the-oberon-system-3/">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>MAX44009 Learn Guide :</strong> nouveau guide Adafruit pour le capteur de lux
+              22-bit (0,045 à 188 000 lux) avec auto-range.
+              <a href="https://blog.adafruit.com/2026/04/15/new-learn-guide-adafruit-max44009-lux-light-sensor-adafruit-products-adafruitlearningsystem-adafruit">[Adafruit]</a>
+            </li>
+            <li>
+              <strong>FreeCAD 1.1 :</strong> sortie début avril, apportant de nettes améliorations
+              sur l'atelier Assembly et le support des esquisses.
+              <a href="https://blog.adafruit.com/2026/04/02/freecad-version-1-1-released/">[Adafruit]</a>
+            </li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Bambu X2D</span>
+            <span class="tag">ESPHome</span>
+            <span class="tag">ESP-NOW</span>
+            <span class="tag">MOPA</span>
+            <span class="tag">SBC</span>
+            <span class="tag">MicroPython</span>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        La Gazette du Maker · Compilée le 18 avril 2026 · Sources : PR Newswire, CNX Software,
+        Hackster.io, Adafruit, OMG Laser, How-To Geek, ESPHome.io.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
